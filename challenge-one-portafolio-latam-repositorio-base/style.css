@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Monofett&family=Monoton&display=swap');
+
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera {
+    display: flex;
+    padding: 0 100px 0 100px;
+    background-color: gold;
+    justify-content: space-between;
+    width: 1440px;
+}
+
+.name-y-logo {
+    display: flex;
+    border-collapse: collapse;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.cabecera__logo {
+    max-width: 80px; /* Ajuste para pantallas pequeñas */
+} 
+
+.cabecera__titulo {
+    font-family: Monofett;
+    text-align: center;
+    white-space: nowrap;
+    width: 10px;
+    /* text-decoration: underline; */
+}
+
+.navegacion {
+    margin-top: 15px;
+}
+
+.navegacion__lista {
+    display: none;
+    white-space: nowrap;
+    color: rgb(63, 63, 235);
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+    
+}
+
+/* ------------------------------ Sección Presentación ------------------------------*/
+.presentacion {
+    padding: 70px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    overflow: hidden;
+
+}
+
+.presentacion__foto {
+    display: flex;
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+}
+
+.redes {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    color: rgb(88, 88, 231);
+    text-decoration: underline;
+}
+
+
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+.sobre-mi {
+    background-color: #EAF2FD;
+    padding: 70px;
+    padding-left: 100px;
+}
+
+.sobre-mi__contenedor {
+    width: 1100px;
+}
+
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+
+.habilidades {
+    margin-top: 60px;
+}
+
+.habilidades__titulo {
+    text-align: center;
+}
+
+.habilidades__lista {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.habilidades__elemento {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+} 
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+.aficiones {
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+.aficiones__titulo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.aficiones__lista {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.aficiones__elemento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------------------------ Sección académica --------------------------------*/
+.formacion {
+    background-color: #EAF2FD;
+    padding-bottom: 20px;
+}
+
+.formacion__titulo {
+    padding-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.formacion__lista {
+    display: flex;
+    justify-content: space-around;
+}
+
+.formacion__elemento {
+    text-align: center;
+}
+
+
+#logo_sem {
+    width: 190px;
+    height: 130px;
+}
+
+#platzi {
+    width: 230px;
+    height: 130px;
+}
+/*------------------------------ Sección de Proyectos --------------------------------*/
+
+.container__horizontal {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.proyectos__contenedor img {
+    width: 300px;
+    height: 200px;
+}
+
+.proyectos {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.proyectos__titulo {
+    padding-top: 50px;
+    
+}
+
+.proyectos__nombre {
+    padding-top: 30px;
+    text-decoration-line: underline;
+}
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+.contacto {
+    background-color: #EAF2FD;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.contacto__formulario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contacto__campo {
+    width: 500px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.contacto__boton {
+    margin-bottom: 30px;
+}
+
+                                                    /* creditos */
+
+footer {
+    padding-left: 30px;
+}
+
+.creditos {
+    padding-top: 30px;
+    font-size: 1.5em;
+}
+
+.logo_comunicacion {
+    width: 30px;
+    height: 30px;
+}
+
+.dev-name {
+    height: 4px;
+}
+
+.container__creditos {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.link__icon {
+    display: flex;
+    align-items: center;
+}
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+}
+
+
+
